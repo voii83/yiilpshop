@@ -1,0 +1,25 @@
+ul.menu-accordion {
+    display: inline-block;
+}
+
+ul.menu-accordion li {
+    padding: 5px 0;
+    list-style: none;
+}
+
+ul.menu-accordion li a{
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-right: 20px;
+    color: #777777;
+}
+
+ul.menu-accordion li ul{
+    padding-left: 20px;
+}
+
+ul.menu-accordion li ul li a {
+    font-weight: normal;
+}
+
