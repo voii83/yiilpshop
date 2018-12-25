@@ -258,7 +258,10 @@ class ParsingXml
                 if ($itemProperty->Ид == $nameOfSitePropertyUid) {
                     $nameOfSite = trim($itemProperty->Значение);
                 }
+
                 if ($itemProperty->Ид == $groupPropertyUid) {
+                    if (empty($itemProperty->Значение)) { break; }
+
                     /* Заполняем таблицу product */
                     $product = Product::find()
                         ->where(['article_site' => trim($itemProperty->Значение)])
